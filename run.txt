@@ -1,1 +1,4 @@
-bin/rails generate controller Articles index --skip-routes
+the generator of the view => bin/rails generate controller Articles index --skip-routes
+the generator of the model => bin/rails generate model Articles title:string body:text
+the generator for db migrate => bin/rails db:migrate
+the generator for db console => bin/rails console

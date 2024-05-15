@@ -1,6 +1,17 @@
 <a href="/home">Home page</a>
 <a href="/articles">Articles</a>
+  <hr><br>
+<a href="/articles/all">All Articles</a>
 <h1>Hello World</h1>
 <div>
   <p>This is the articles page</p>
 </div>  
+<div>
+  <ul>
+    <% @articles.each do |article| %>
+      <li>
+        <%= article.title %>
+      </li>
+    <% end %>
+  </ul>
+</div>
